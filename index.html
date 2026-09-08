@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,12 @@
     <!-- Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
-        /* ==========================================================================
-           CSS VARIABLES & RESET
-           ========================================================================== */
         :root {
             --bg-primary: #07090e;
             --bg-secondary: #0b0f17;
@@ -167,7 +166,8 @@
             transition: var(--transition);
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a:hover,
+        .nav-links a.active {
             color: var(--accent-start);
         }
 
@@ -253,8 +253,15 @@
         }
 
         @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
         }
 
         .hero-desc {
@@ -331,7 +338,7 @@
             border-left: 4px solid var(--accent-start);
             transition: var(--transition);
         }
-        
+
         .edu-card:hover {
             background: rgba(255, 255, 255, 0.05);
             transform: translateX(5px);
@@ -388,7 +395,8 @@
             margin-bottom: 0.5rem;
         }
 
-        .stat-num, .stat-plus {
+        .stat-num,
+        .stat-plus {
             font-size: 2.5rem;
             font-weight: 800;
             color: var(--accent-start);
@@ -628,10 +636,10 @@
             box-shadow: 0 0 10px rgba(0, 242, 254, 0.1);
         }
 
-        .input-group input:focus ~ label,
-        .input-group textarea:focus ~ label,
-        .input-group input:valid ~ label,
-        .input-group textarea:valid ~ label {
+        .input-group input:focus~label,
+        .input-group textarea:focus~label,
+        .input-group input:valid~label,
+        .input-group textarea:valid~label {
             top: -0.5rem;
             left: 0.8rem;
             font-size: 0.8rem;
@@ -647,7 +655,7 @@
             text-align: center;
             font-weight: 500;
         }
-        
+
         .form-message.success {
             display: block;
             background: rgba(46, 204, 113, 0.1);
@@ -698,10 +706,23 @@
            RESPONSIVE DESIGN
            ========================================================================== */
         @media screen and (max-width: 992px) {
-            .hero-title { font-size: 3rem; }
-            .hero-typing { font-size: 2rem; }
-            .about-grid { grid-template-columns: 1fr; gap: 3rem; }
-            .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .hero-title {
+                font-size: 3rem;
+            }
+
+            .hero-typing {
+                font-size: 2rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
         }
 
         @media screen and (max-width: 768px) {
@@ -717,16 +738,36 @@
                 padding-top: 3rem;
                 transition: 0.4s ease-in-out;
             }
-            .nav-links.active { right: 0; }
-            .mobile-menu-btn { display: block; }
-            
-            .hero-title { font-size: 2.5rem; }
-            .hero-typing { font-size: 1.5rem; height: 2rem; }
-            .hero-actions { flex-direction: column; align-items: flex-start; }
-            section { padding: 70px 0; }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-typing {
+                font-size: 1.5rem;
+                height: 2rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            section {
+                padding: 70px 0;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -753,22 +794,28 @@
         <div class="container">
             <div class="hero-content">
                 <p class="hero-subtitle">Hello, I'm Siva Santhosh Kumar</p>
-                <h1 class="hero-title">Engineering Data-Driven <br><span class="gradient-text">Future Solutions</span></h1>
+                <h1 class="hero-title">Engineering Data-Driven <br><span class="gradient-text">Future Solutions</span>
+                </h1>
                 <div class="hero-typing">
                     <span id="typing-text"></span><span class="cursor"></span>
                 </div>
                 <p class="hero-desc">
-                    B.Tech undergraduate in Artificial Intelligence & Data Science at DVR & Dr. HS MIC College of Technology. Passionate about algorithms, modern web interfaces, and leveraging ML to solve real-world problems.
+                    B.Tech undergraduate in Artificial Intelligence & Data Science at DVR & Dr. HS MIC College of
+                    Technology. Passionate about algorithms, modern web interfaces, and leveraging ML to solve
+                    real-world problems.
                 </p>
                 <div class="hero-actions">
                     <a href="#projects" class="btn btn-primary">Explore Projects</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                     <div class="social-icons">
-                        <a href="https://github.com/SanthoshJ-24" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/SanthoshJ-24" target="_blank" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
                         <!-- Updated LinkedIn URL -->
-                        <a href="https://www.linkedin.com/in/siva-santhosh-kumar-150603378?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/siva-santhosh-kumar-150603378?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <!-- Added WhatsApp Icon -->
-                        <a href="https://wa.me/916281643365" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/916281643365" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -779,17 +826,22 @@
     <section id="about">
         <div class="container">
             <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-            
+
             <div class="about-bio">
                 <p>
-                    I am an aspiring <span>AI & Data Science engineer</span> with a solid foundation in modern web development and algorithmic problem-solving. I am passionate about building data-driven applications, clean interactive user interfaces, and leveraging machine learning to solve real-world problems. Eager to create impactful digital products through continuous learning and engineering excellence.
+                    I am an aspiring <span>AI & Data Science engineer</span> with a solid foundation in modern web
+                    development and algorithmic problem-solving. I am passionate about building data-driven
+                    applications, clean interactive user interfaces, and leveraging machine learning to solve real-world
+                    problems. Eager to create impactful digital products through continuous learning and engineering
+                    excellence.
                 </p>
             </div>
 
             <div class="about-grid">
                 <!-- Left Column: Education -->
                 <div class="education-section">
-                    <h3 class="section-subtitle"><i class="fas fa-user-graduate" style="color: var(--accent-start);"></i> Education Journey</h3>
+                    <h3 class="section-subtitle"><i class="fas fa-user-graduate"
+                            style="color: var(--accent-start);"></i> Education Journey</h3>
                     <div class="education-timeline">
                         <div class="glass-card edu-card">
                             <h3>B.Tech - AI & Data Science</h3>
@@ -810,7 +862,8 @@
 
                 <!-- Right Column: Stats -->
                 <div class="stats-section">
-                    <h3 class="section-subtitle"><i class="fas fa-chart-line" style="color: var(--accent-start);"></i> Quick Facts</h3>
+                    <h3 class="section-subtitle"><i class="fas fa-chart-line" style="color: var(--accent-start);"></i>
+                        Quick Facts</h3>
                     <div class="stats-grid">
                         <div class="glass-card stat-card">
                             <div class="stat-num-container">
@@ -842,9 +895,10 @@
         <div class="container">
             <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
             <div class="skills-container">
-                
+
                 <div class="skill-category">
-                    <h3><i class="fas fa-code" style="color:var(--accent-start); margin-right:8px;"></i> Programming Languages</h3>
+                    <h3><i class="fas fa-code" style="color:var(--accent-start); margin-right:8px;"></i> Programming
+                        Languages</h3>
                     <div class="skills-grid">
                         <div class="glass-card skill-chip"><i class="fab fa-python"></i> Python</div>
                         <div class="glass-card skill-chip"><i class="fab fa-js"></i> JavaScript (Basics)</div>
@@ -852,7 +906,8 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-laptop-code" style="color:var(--accent-start); margin-right:8px;"></i> Web Technologies</h3>
+                    <h3><i class="fas fa-laptop-code" style="color:var(--accent-start); margin-right:8px;"></i> Web
+                        Technologies</h3>
                     <div class="skills-grid">
                         <div class="glass-card skill-chip"><i class="fab fa-html5"></i> HTML5</div>
                         <div class="glass-card skill-chip"><i class="fab fa-css3-alt"></i> CSS3</div>
@@ -861,11 +916,15 @@
                 </div>
 
                 <div class="skill-category">
-                    <h3><i class="fas fa-brain" style="color:var(--accent-start); margin-right:8px;"></i> Core Fundamentals</h3>
+                    <h3><i class="fas fa-brain" style="color:var(--accent-start); margin-right:8px;"></i> Core
+                        Fundamentals</h3>
                     <div class="skills-grid">
-                        <div class="glass-card skill-chip"><i class="fas fa-project-diagram"></i> Data Structures & Algorithms</div>
-                        <div class="glass-card skill-chip"><i class="fas fa-chart-line"></i> Data Analysis Fundamentals</div>
-                        <div class="glass-card skill-chip"><i class="fas fa-lightbulb"></i> Algorithmic Problem Solving</div>
+                        <div class="glass-card skill-chip"><i class="fas fa-project-diagram"></i> Data Structures &
+                            Algorithms</div>
+                        <div class="glass-card skill-chip"><i class="fas fa-chart-line"></i> Data Analysis Fundamentals
+                        </div>
+                        <div class="glass-card skill-chip"><i class="fas fa-lightbulb"></i> Algorithmic Problem Solving
+                        </div>
                     </div>
                 </div>
 
@@ -878,19 +937,18 @@
         <div class="container">
             <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
             <div class="projects-grid">
-                
+
                 <!-- Project 1 -->
                 <div class="glass-card project-card">
                     <i class="fas fa-chart-pie project-icon"></i>
                     <h3 class="project-title">Predictive Data Analysis Model</h3>
-                    <p class="project-desc">A Python-based machine learning project that analyzes datasets to identify trends and predict future outcomes. Implemented basic regression models and data visualization.</p>
+                    <p class="project-desc">A Python-based machine learning project that analyzes datasets to identify
+                        trends and predict future outcomes. Implemented basic regression models and data visualization.
+                    </p>
                     <div class="project-tech">
                         <span class="tech-badge">Python</span>
                         <span class="tech-badge">Pandas</span>
                         <span class="tech-badge">Scikit-Learn</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SanthoshJ-24" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                     </div>
                 </div>
 
@@ -898,14 +956,17 @@
                 <div class="glass-card project-card">
                     <i class="fas fa-globe project-icon"></i>
                     <h3 class="project-title">Interactive Web Portal</h3>
-                    <p class="project-desc">A responsive, mobile-first frontend interface built using pure HTML, CSS, and Vanilla JavaScript. Features glassmorphism UI, smooth scroll, and dynamic DOM manipulation.</p>
+                    <p class="project-desc">A responsive, mobile-first frontend interface built using pure HTML, CSS,
+                        and Vanilla JavaScript. Features glassmorphism UI, smooth scroll, and dynamic DOM manipulation.
+                    </p>
                     <div class="project-tech">
                         <span class="tech-badge">HTML5</span>
                         <span class="tech-badge">CSS3</span>
                         <span class="tech-badge">JavaScript</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/SanthoshJ-24" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+                        <a href="https://github.com/SanthoshJ-24" target="_blank"><i class="fab fa-github"></i> Source
+                            Code</a>
                         <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                     </div>
                 </div>
@@ -914,14 +975,12 @@
                 <div class="glass-card project-card">
                     <i class="fas fa-network-wired project-icon"></i>
                     <h3 class="project-title">Algorithm Visualizer</h3>
-                    <p class="project-desc">An educational tool to visualize common Data Structures and sorting algorithms step-by-step, helping students understand algorithmic efficiency and flow.</p>
+                    <p class="project-desc">An educational tool to visualize common Data Structures and sorting
+                        algorithms step-by-step, helping students understand algorithmic efficiency and flow.</p>
                     <div class="project-tech">
                         <span class="tech-badge">Python</span>
                         <span class="tech-badge">DSA</span>
                         <span class="tech-badge">Logic Design</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SanthoshJ-24" target="_blank"><i class="fab fa-github"></i> Source Code</a>
                     </div>
                 </div>
 
@@ -934,18 +993,19 @@
         <div class="container">
             <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
             <div class="contact-grid">
-                
+
                 <div class="contact-info">
                     <h3>Let's Connect!</h3>
-                    <p>Whether you have a question, a project idea, or just want to say hi, my inbox is always open. I'll try my best to get back to you!</p>
-                    
+                    <p>Whether you have a question, a project idea, or just want to say hi, my inbox is always open.
+                        I'll try my best to get back to you!</p>
+
                     <!-- Direct Email and WhatsApp Links -->
                     <div class="contact-methods">
                         <a href="mailto:j.sivasanthoshkumar@gmail.com" class="glass-card contact-method">
                             <i class="fas fa-envelope" style="font-size: 1.5rem; color: var(--accent-start);"></i>
                             <span class="contact-method-text">j.sivasanthoshkumar@gmail.com</span>
                         </a>
-                        
+
                         <a href="https://wa.me/916281643365" target="_blank" class="glass-card contact-method">
                             <i class="fab fa-whatsapp" style="font-size: 1.5rem; color: #25D366;"></i>
                             <span class="contact-method-text">+91 6281643365</span>
@@ -953,31 +1013,35 @@
                     </div>
 
                     <div class="social-icons" style="margin-left: 0; margin-top: 1.5rem;">
-                        <a href="https://www.linkedin.com/in/siva-santhosh-kumar-150603378?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="glass-card" style="padding: 10px 15px; border-radius: 8px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/SanthoshJ-24" target="_blank" class="glass-card" style="padding: 10px 15px; border-radius: 8px;"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/in/siva-santhosh-kumar-150603378?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" class="glass-card" style="padding: 10px 15px; border-radius: 8px;"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/SanthoshJ-24" target="_blank" class="glass-card"
+                            style="padding: 10px 15px; border-radius: 8px;"><i class="fab fa-github"></i> GitHub</a>
                     </div>
                 </div>
 
                 <div class="glass-card" style="padding: 2rem;">
                     <form class="contact-form" id="contactForm">
-    <!-- FormSubmit Captcha తీసేయడానికి -->
-    <input type="hidden" name="_captcha" value="false">
-    
-    <div class="input-group">
-        <input type="text" id="name" name="name" required>
-        <label for="name">Your Name</label>
-    </div>
-    <div class="input-group">
-        <input type="email" id="email" name="email" required>
-        <label for="email">Your Email</label>
-    </div>
-    <div class="input-group">
-        <textarea id="message" name="message" required></textarea>
-        <label for="message">Your Message</label>
-    </div>
-    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-    <div class="form-message" id="formMessage">Message sent successfully! I will reach out soon.</div>
-</form>
+                        <!-- FormSubmit Captcha తీసేయడానికి -->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="input-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" name="message" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        <div class="form-message" id="formMessage">Message sent successfully! I will reach out soon.
+                        </div>
+                    </form>
                 </div>
 
             </div>
@@ -990,7 +1054,8 @@
             <a href="#home" class="back-to-top" aria-label="Back to top">
                 <i class="fas fa-arrow-up"></i>
             </a>
-            <p>&copy; 2026 Siva Santhosh Kumar. Built with <i class="fas fa-heart" style="color:var(--accent-start);"></i> & Vanilla Code.</p>
+            <p>&copy; 2026 Siva Santhosh Kumar. Built with <i class="fas fa-heart"
+                    style="color:var(--accent-start);"></i> & Vanilla Code.</p>
         </div>
     </footer>
 
@@ -1032,7 +1097,7 @@
         mobileBtn.addEventListener('click', () => {
             navLinksContainer.classList.toggle('active');
             const icon = mobileBtn.querySelector('i');
-            if(navLinksContainer.classList.contains('active')){
+            if (navLinksContainer.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
             } else {
@@ -1057,7 +1122,7 @@
 
         function typeEffect() {
             const currentPhrase = phrases[phraseIndex];
-            
+
             if (isDeleting) {
                 typingText.textContent = currentPhrase.substring(0, charIndex - 1);
                 charIndex--;
@@ -1093,7 +1158,7 @@
                         const target = +counter.getAttribute('data-target');
                         const duration = 2000;
                         const increment = target / (duration / 16);
-                        
+
                         let current = 0;
                         const updateCounter = () => {
                             current += increment;
@@ -1114,39 +1179,40 @@
         document.getElementById('about').querySelectorAll('.counter').forEach(el => counterObserver.observe(document.getElementById('about')));
 
         // 5. Real Form Submission via FormSubmit API
-const contactForm = document.getElementById('contactForm');
-const formMessage = document.getElementById('formMessage');
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const btn = contactForm.querySelector('button');
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-    btn.disabled = true;
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-    const formData = new FormData(contactForm);
-    
-    fetch("https://formsubmit.co/ajax/j.sivasanthoshkumar@gmail.com", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.json())
-    .then(data => {
-        formMessage.classList.add('success');
-        btn.innerHTML = 'Send Message';
-        btn.disabled = false;
-        contactForm.reset();
+            const btn = contactForm.querySelector('button');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
 
-        setTimeout(() => {
-            formMessage.classList.remove('success');
-        }, 5000);
-    })
-    .catch(error => {
-        btn.innerHTML = 'Send Message';
-        btn.disabled = false;
-        alert("Oops! Something went wrong. Please try again.");
-    });
-});
+            const formData = new FormData(contactForm);
+
+            fetch("https://formsubmit.co/ajax/j.sivasanthoshkumar@gmail.com", {
+                method: "POST",
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    formMessage.classList.add('success');
+                    btn.innerHTML = 'Send Message';
+                    btn.disabled = false;
+                    contactForm.reset();
+
+                    setTimeout(() => {
+                        formMessage.classList.remove('success');
+                    }, 5000);
+                })
+                .catch(error => {
+                    btn.innerHTML = 'Send Message';
+                    btn.disabled = false;
+                    alert("Oops! Something went wrong. Please try again.");
+                });
+        });
     </script>
 </body>
+
 </html>
