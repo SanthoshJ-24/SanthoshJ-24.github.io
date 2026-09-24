@@ -930,64 +930,65 @@
 
             </div>
         </div>
+   <!-- Projects Section -->
     </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-            <div class="projects-grid">
-
-                <!-- Project 1 -->
-                <div class="glass-card project-card">
-                    <i class="fas fa-chart-pie project-icon"></i>
-                    <h3 class="project-title">Predictive Data Analysis Model</h3>
-                    <p class="project-desc">A Python-based machine learning project that analyzes datasets to identify
-                        trends and predict future outcomes. Implemented basic regression models and data visualization.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Pandas</span>
-                        <span class="tech-badge">Scikit-Learn</span>
-                    </div>
+<!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1: MedClarify AI (Updated with Live Link) -->
+            <div class="glass-card project-card">
+                <i class="fas fa-heartbeat project-icon"></i>
+                <h3 class="project-title">MedClarify AI</h3>
+                <p class="project-desc">A hackathon project concept designed to simplify complex medical communication. It bridges the gap between healthcare information and patients by providing clear, bilingual medical explanations in Telugu and English.</p>
+                <div class="project-tech">
+                    <span class="tech-badge">UI Design</span>
+                    <span class="tech-badge">AI Integration</span>
+                    <span class="tech-badge">Telugu/English NLP</span>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="glass-card project-card">
-                    <i class="fas fa-globe project-icon"></i>
-                    <h3 class="project-title">Interactive Web Portal</h3>
-                    <p class="project-desc">A responsive, mobile-first frontend interface built using pure HTML, CSS,
-                        and Vanilla JavaScript. Features glassmorphism UI, smooth scroll, and dynamic DOM manipulation.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/SanthoshJ-24" target="_blank"><i class="fab fa-github"></i> Source
-                            Code</a>
-                        <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                    </div>
+                <div class="project-links">
+                    <a href="https://github.com/SanthoshJ-24/MedClarify-AI" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> UI & Roadmap</a>
+                    <a href="https://medclarify-ai-qjh9.onrender.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
                 </div>
-
-                <!-- Project 3 -->
-                <div class="glass-card project-card">
-                    <i class="fas fa-network-wired project-icon"></i>
-                    <h3 class="project-title">Algorithm Visualizer</h3>
-                    <p class="project-desc">An educational tool to visualize common Data Structures and sorting
-                        algorithms step-by-step, helping students understand algorithmic efficiency and flow.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">DSA</span>
-                        <span class="tech-badge">Logic Design</span>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </section>
 
+            <!-- Project 2 -->
+            <div class="glass-card project-card">
+                <i class="fas fa-globe project-icon"></i>
+                <h3 class="project-title">Interactive Web Portal</h3>
+                <p class="project-desc">A responsive, mobile-first frontend interface built using pure HTML, CSS, and Vanilla JavaScript. Features glassmorphism UI, smooth scroll, and dynamic DOM manipulation.</p>
+                <div class="project-tech">
+                    <span class="tech-badge">HTML5</span>
+                    <span class="tech-badge">CSS3</span>
+                    <span class="tech-badge">JavaScript</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/SanthoshJ-24" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source Code</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="glass-card project-card">
+                <i class="fas fa-network-wired project-icon"></i>
+                <h3 class="project-title">Algorithm Visualizer</h3>
+                <p class="project-desc">An educational tool to visualize common Data Structures and sorting algorithms step-by-step, helping students understand algorithmic efficiency and flow.</p>
+                <div class="project-tech">
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">DSA</span>
+                    <span class="tech-badge">Logic Design</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/SanthoshJ-24" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source Code</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -1081,9 +1082,8 @@
                     current = section.getAttribute('id');
                 }
             });
-
             navLinks.forEach(link => {
-                link.classList.remove('active');
+                link.classList.remove('activve');
                 if (link.getAttribute('href').includes(current)) {
                     link.classList.add('active');
                 }
@@ -1105,14 +1105,12 @@
                 icon.classList.add('fa-bars');
             }
         });
-
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navLinksContainer.classList.remove('active');
                 mobileBtn.querySelector('i').classList.replace('fa-times', 'fa-bars');
             });
         });
-
         // 3. Dynamic Typing Effect
         const typingText = document.getElementById('typing-text');
         const phrases = ["AI & DS Student", "Python Developer", "Frontend Enthusiast", "Problem Solver"];
@@ -1175,7 +1173,6 @@
                 }
             });
         }, { threshold: 0.5 });
-
         document.getElementById('about').querySelectorAll('.counter').forEach(el => counterObserver.observe(document.getElementById('about')));
 
         // 5. Real Form Submission via FormSubmit API
@@ -1189,7 +1186,7 @@
             btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             btn.disabled = true;
 
-            const formData = new FormData(contactForm);
+            const formData = new FormData(conctactform);
 
             fetch("https://formsubmit.co/ajax/j.sivasanthoshkumar@gmail.com", {
                 method: "POST",
@@ -1201,7 +1198,6 @@
                     btn.innerHTML = 'Send Message';
                     btn.disabled = false;
                     contactForm.reset();
-
                     setTimeout(() => {
                         formMessage.classList.remove('success');
                     }, 5000);
